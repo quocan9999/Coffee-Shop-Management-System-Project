@@ -1,3 +1,5 @@
+using DoAn_QuanLyQuanCaPhe.Forms;
+
 namespace DoAn_QuanLyQuanCaPhe
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace DoAn_QuanLyQuanCaPhe
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new fQuanLyBan());
+            Application.Run(new fDangNhap());
         }
     }
 }
