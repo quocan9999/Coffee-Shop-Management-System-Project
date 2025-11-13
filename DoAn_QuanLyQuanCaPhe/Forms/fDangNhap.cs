@@ -16,5 +16,13 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
         {
             InitializeComponent();
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            fQuanLyBan f = new fQuanLyBan();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

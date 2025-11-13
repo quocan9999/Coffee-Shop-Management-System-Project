@@ -36,13 +36,9 @@
             menuQuanLyBan = new ToolStripMenuItem();
             menuQuanLyMon = new ToolStripMenuItem();
             menuQuanLyNhanVien = new ToolStripMenuItem();
-            menuQuanLyKhachHang = new ToolStripMenuItem();
             menuBaoCao = new ToolStripMenuItem();
             menuBaoCaoDoanhThu = new ToolStripMenuItem();
             menuBaoCaoMonBanChay = new ToolStripMenuItem();
-            menuTroGiup = new ToolStripMenuItem();
-            menuHuongDan = new ToolStripMenuItem();
-            menuThongTin = new ToolStripMenuItem();
             pnlLeft = new Panel();
             flpBan = new FlowLayoutPanel();
             pnlBanInfo = new Panel();
@@ -69,6 +65,7 @@
             lblBanDangChon = new Label();
             lblBanDangChonText = new Label();
             lblThanhToanTitle = new Label();
+            quảnLýDanhMụcToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             pnlLeft.SuspendLayout();
             pnlBanInfo.SuspendLayout();
@@ -87,7 +84,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menuHeThong, menuQuanLy, menuBaoCao, menuTroGiup });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuHeThong, menuQuanLy, menuBaoCao });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1371, 28);
@@ -98,26 +95,26 @@
             // 
             menuHeThong.DropDownItems.AddRange(new ToolStripItem[] { menuDangXuat, menuThoat });
             menuHeThong.Name = "menuHeThong";
-            menuHeThong.Size = new Size(88, 24);
+            menuHeThong.Size = new Size(85, 24);
             menuHeThong.Text = "Hệ thống";
             // 
             // menuDangXuat
             // 
             menuDangXuat.Name = "menuDangXuat";
-            menuDangXuat.Size = new Size(160, 26);
+            menuDangXuat.Size = new Size(224, 26);
             menuDangXuat.Text = "Đăng xuất";
             menuDangXuat.Click += menuDangXuat_Click;
             // 
             // menuThoat
             // 
             menuThoat.Name = "menuThoat";
-            menuThoat.Size = new Size(160, 26);
+            menuThoat.Size = new Size(224, 26);
             menuThoat.Text = "Thoát";
             menuThoat.Click += menuThoat_Click;
             // 
             // menuQuanLy
             // 
-            menuQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menuQuanLyBan, menuQuanLyMon, menuQuanLyNhanVien, menuQuanLyKhachHang });
+            menuQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menuQuanLyBan, menuQuanLyMon, menuQuanLyNhanVien, quảnLýDanhMụcToolStripMenuItem });
             menuQuanLy.Name = "menuQuanLy";
             menuQuanLy.Size = new Size(73, 24);
             menuQuanLy.Text = "Quản lý";
@@ -143,13 +140,6 @@
             menuQuanLyNhanVien.Text = "Quản lý nhân viên";
             menuQuanLyNhanVien.Click += menuQuanLyNhanVien_Click;
             // 
-            // menuQuanLyKhachHang
-            // 
-            menuQuanLyKhachHang.Name = "menuQuanLyKhachHang";
-            menuQuanLyKhachHang.Size = new Size(224, 26);
-            menuQuanLyKhachHang.Text = "Quản lý khách hàng";
-            menuQuanLyKhachHang.Click += menuQuanLyKhachHang_Click;
-            // 
             // menuBaoCao
             // 
             menuBaoCao.DropDownItems.AddRange(new ToolStripItem[] { menuBaoCaoDoanhThu, menuBaoCaoMonBanChay });
@@ -160,37 +150,16 @@
             // menuBaoCaoDoanhThu
             // 
             menuBaoCaoDoanhThu.Name = "menuBaoCaoDoanhThu";
-            menuBaoCaoDoanhThu.Size = new Size(233, 26);
+            menuBaoCaoDoanhThu.Size = new Size(243, 26);
             menuBaoCaoDoanhThu.Text = "Báo cáo doanh thu";
             menuBaoCaoDoanhThu.Click += menuBaoCaoDoanhThu_Click;
             // 
             // menuBaoCaoMonBanChay
             // 
             menuBaoCaoMonBanChay.Name = "menuBaoCaoMonBanChay";
-            menuBaoCaoMonBanChay.Size = new Size(233, 26);
+            menuBaoCaoMonBanChay.Size = new Size(243, 26);
             menuBaoCaoMonBanChay.Text = "Báo cáo món bán chạy";
             menuBaoCaoMonBanChay.Click += menuBaoCaoMonBanChay_Click;
-            // 
-            // menuTroGiup
-            // 
-            menuTroGiup.DropDownItems.AddRange(new ToolStripItem[] { menuHuongDan, menuThongTin });
-            menuTroGiup.Name = "menuTroGiup";
-            menuTroGiup.Size = new Size(78, 24);
-            menuTroGiup.Text = "Trợ giúp";
-            // 
-            // menuHuongDan
-            // 
-            menuHuongDan.Name = "menuHuongDan";
-            menuHuongDan.Size = new Size(224, 26);
-            menuHuongDan.Text = "Hướng dẫn sử dụng";
-            menuHuongDan.Click += menuHuongDan_Click;
-            // 
-            // menuThongTin
-            // 
-            menuThongTin.Name = "menuThongTin";
-            menuThongTin.Size = new Size(224, 26);
-            menuThongTin.Text = "Thông tin phần mềm";
-            menuThongTin.Click += menuThongTin_Click;
             // 
             // pnlLeft
             // 
@@ -510,6 +479,12 @@
             lblThanhToanTitle.Text = "KHU VỰC THANH TOÁN";
             lblThanhToanTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // quảnLýDanhMụcToolStripMenuItem
+            // 
+            quảnLýDanhMụcToolStripMenuItem.Name = "quảnLýDanhMụcToolStripMenuItem";
+            quảnLýDanhMụcToolStripMenuItem.Size = new Size(224, 26);
+            quảnLýDanhMụcToolStripMenuItem.Text = "Quản lý danh mục";
+            // 
             // fQuanLyBan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -557,13 +532,9 @@
         private ToolStripMenuItem menuQuanLyBan;
         private ToolStripMenuItem menuQuanLyMon;
         private ToolStripMenuItem menuQuanLyNhanVien;
-        private ToolStripMenuItem menuQuanLyKhachHang;
         private ToolStripMenuItem menuBaoCao;
         private ToolStripMenuItem menuBaoCaoDoanhThu;
         private ToolStripMenuItem menuBaoCaoMonBanChay;
-        private ToolStripMenuItem menuTroGiup;
-        private ToolStripMenuItem menuHuongDan;
-        private ToolStripMenuItem menuThongTin;
         private Panel pnlLeft;
         private FlowLayoutPanel flpBan;
         private Panel pnlBanInfo;
@@ -590,5 +561,6 @@
         private Label lblBanDangChon;
         private Label lblBanDangChonText;
         private Label lblThanhToanTitle;
+        private ToolStripMenuItem quảnLýDanhMụcToolStripMenuItem;
     }
 }

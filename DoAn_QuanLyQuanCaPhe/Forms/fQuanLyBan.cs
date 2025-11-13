@@ -12,11 +12,6 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
         public fQuanLyBan()
         {
             InitializeComponent();
-            this.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-
-            // Thiết lập culture để hiển thị tiếng Việt đúng
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("vi-VN");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi-VN");
 
             this.Text = "Quản lý bàn - Quản lý quán cà phê";
             this.WindowState = FormWindowState.Maximized;
@@ -273,13 +268,6 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
             // TODO: Mở form quản lý nhân viên
         }
 
-        private void menuQuanLyKhachHang_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng Quản lý khách hàng đang được phát triển!", "Thông báo",
-      MessageBoxButtons.OK, MessageBoxIcon.Information);
-            // TODO: Mở form quản lý khách hàng
-        }
-
         private void menuBaoCaoDoanhThu_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Chức năng Báo cáo doanh thu đang được phát triển!", "Thông báo",
@@ -292,36 +280,6 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
             MessageBox.Show("Chức năng Báo cáo món bán chạy đang được phát triển!", "Thông báo",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
             // TODO: Mở form báo cáo món bán chạy
-        }
-
-        private void menuHuongDan_Click(object sender, EventArgs e)
-        {
-            string huongDan = "HƯỚNG DẪN SỬ DỤNG PHẦN MỀM QUẢN LÝ QUÁN CÀ PHÊ\n\n" +
-              "1. Quản lý bàn:\n" +
-          "   - Chọn bàn để xem thông tin và quản lý hóa đơn\n" +
-       "   - Lọc bàn theo khu vực\n" +
-    "   - Thêm/xóa món trong hóa đơn\n" +
-            "   - Thanh toán hóa đơn\n\n" +
-    "2. Menu chính:\n" +
-       "   - Hệ thống: Đăng xuất, thoát ứng dụng\n" +
-           "   - Quản lý: Quản lý bàn, món, nhân viên, khách hàng\n" +
-       "   - Báo cáo: Doanh thu, món bán chạy\n" +
-           "   - Trợ giúp: Hướng dẫn và thông tin phần mềm";
-
-            MessageBox.Show(huongDan, "Hướng dẫn sử dụng", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void menuThongTin_Click(object sender, EventArgs e)
-        {
-            string thongTin = "PHẦN MỀM QUẢN LÝ QUÁN CÀ PHÊ\n\n" +
-         "Phiên bản: 1.0\n" +
-     "Phát triển bởi: Nhóm sinh viên\n" +
- "Ngôn ngữ: C# .NET 8\n" +
-         "Framework: Windows Forms\n\n" +
-   "Mô tả: Phần mềm hỗ trợ quản lý quán cà phê\n" +
-       "bao gồm quản lý bàn, món, nhân viên và báo cáo.";
-
-            MessageBox.Show(thongTin, "Thông tin phần mềm", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
