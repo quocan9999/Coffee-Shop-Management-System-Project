@@ -1,3 +1,5 @@
+using DoAn_QuanLyQuanCaPhe.Forms;
+
 namespace DoAn_QuanLyQuanCaPhe
 {
     internal static class Program
