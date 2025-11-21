@@ -8,22 +8,22 @@ using System.Data.SqlClient;
 
 namespace DoAn_QuanLyQuanCaPhe.DataAccess.DAO
 {
-    internal class Account
+    internal class AccountDAO
     {
-        private static Account instance;
-        public static Account Instance
+        private static AccountDAO instance;
+        public static AccountDAO Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new Account();
+                    instance = new AccountDAO();
                 }
                 return instance;
             }
             private set { instance = value; }
         }
-        private Account() { }
+        private AccountDAO() { }
         public bool Login(string username, string password)
         {
             string query = "usp_Login @userName, @passWord";

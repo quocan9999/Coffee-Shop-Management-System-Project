@@ -21,7 +21,7 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
         }
         bool Login(string userName, string passWord) 
         {
-            return Account.Instance.Login(userName, passWord);
+            return AccountDAO.Instance.Login(userName, passWord);
         }
         //Kiểm tra tên đăng nhập hoặc mật khẩu không được để trống và không được có khoảng trắng
         private bool ValidateInput(string userName, string passWord)
