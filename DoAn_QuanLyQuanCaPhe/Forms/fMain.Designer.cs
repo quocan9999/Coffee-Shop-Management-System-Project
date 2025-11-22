@@ -1,6 +1,6 @@
 ﻿namespace DoAn_QuanLyQuanCaPhe.Forms
 {
-    partial class fQuanLyBan
+    partial class fMain
     {
         /// <summary>
         /// Required designer variable.
@@ -102,14 +102,22 @@
             // menuDangXuat
             // 
             menuDangXuat.Name = "menuDangXuat";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             menuDangXuat.Size = new Size(127, 22);
+=======
+            menuDangXuat.Size = new Size(160, 26);
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             menuDangXuat.Text = "Đăng xuất";
             menuDangXuat.Click += menuDangXuat_Click;
             // 
             // menuThoat
             // 
             menuThoat.Name = "menuThoat";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             menuThoat.Size = new Size(127, 22);
+=======
+            menuThoat.Size = new Size(160, 26);
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             menuThoat.Text = "Thoát";
             menuThoat.Click += menuThoat_Click;
             // 
@@ -123,29 +131,47 @@
             // menuQuanLyBan
             // 
             menuQuanLyBan.Name = "menuQuanLyBan";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             menuQuanLyBan.Size = new Size(180, 22);
+=======
+            menuQuanLyBan.Size = new Size(211, 26);
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             menuQuanLyBan.Text = "Quản lý bàn";
             menuQuanLyBan.Click += menuQuanLyBan_Click;
             // 
             // menuQuanLyMon
             // 
             menuQuanLyMon.Name = "menuQuanLyMon";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             menuQuanLyMon.Size = new Size(180, 22);
+=======
+            menuQuanLyMon.Size = new Size(211, 26);
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             menuQuanLyMon.Text = "Quản lý món";
             menuQuanLyMon.Click += menuQuanLyMon_Click;
             // 
             // menuQuanLyNhanVien
             // 
             menuQuanLyNhanVien.Name = "menuQuanLyNhanVien";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             menuQuanLyNhanVien.Size = new Size(180, 22);
+=======
+            menuQuanLyNhanVien.Size = new Size(211, 26);
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             menuQuanLyNhanVien.Text = "Quản lý nhân viên";
             menuQuanLyNhanVien.Click += menuQuanLyNhanVien_Click;
             // 
             // quảnLýDanhMụcToolStripMenuItem
             // 
             quảnLýDanhMụcToolStripMenuItem.Name = "quảnLýDanhMụcToolStripMenuItem";
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             quảnLýDanhMụcToolStripMenuItem.Size = new Size(180, 22);
             quảnLýDanhMụcToolStripMenuItem.Text = "Quản lý danh mục";
+=======
+            quảnLýDanhMụcToolStripMenuItem.Size = new Size(211, 26);
+            quảnLýDanhMụcToolStripMenuItem.Text = "Quản lý danh mục";
+            quảnLýDanhMụcToolStripMenuItem.Click += menuQuanLyDanhMuc_Click;
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             // 
             // menuBaoCao
             // 
@@ -468,7 +494,11 @@
             lblThanhToanTitle.Text = "KHU VỰC THANH TOÁN";
             lblThanhToanTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             // fQuanLyBan
+=======
+            // fMain
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -477,10 +507,16 @@
             Controls.Add(pnlLeft);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+<<<<<<< HEAD:DoAn_QuanLyQuanCaPhe/Forms/fQuanLyBan.Designer.cs
             MinimumSize = new Size(1000, 598);
             Name = "fQuanLyBan";
+=======
+            Margin = new Padding(3, 4, 3, 4);
+            MinimumSize = new Size(1140, 784);
+            Name = "fMain";
+>>>>>>> origin/feature-QuocAn:DoAn_QuanLyQuanCaPhe/Forms/fMain.Designer.cs
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Quản lý bàn - Quản lý quán cà phê";
+            Text = "Main - Quản lý quán cà phê";
             FormClosing += fQuanLyBan_FormClosing;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
