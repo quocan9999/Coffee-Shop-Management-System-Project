@@ -16,5 +16,25 @@ namespace DoAn_QuanLyQuanCaPhe.Forms
         {
             InitializeComponent();
         }
+
+        private void txtIDNV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

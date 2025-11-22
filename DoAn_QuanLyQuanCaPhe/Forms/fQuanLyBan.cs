@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace DoAn_QuanLyQuanCaPhe.Forms
 {
-    public partial class fQuanLyDanhMuc : Form
+    public partial class fQuanLyBan : Form
     {
-        public fQuanLyDanhMuc()
+        public fQuanLyBan()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
         {
 
         }

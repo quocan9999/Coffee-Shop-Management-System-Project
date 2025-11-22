@@ -35,10 +35,12 @@
             colID = new DataGridViewTextBoxColumn();
             colDanhMuc = new DataGridViewTextBoxColumn();
             panel3 = new Panel();
-            cboDanhMuc = new ComboBox();
-            txtID = new TextBox();
+            panel6 = new Panel();
             label3 = new Label();
+            txtID = new TextBox();
+            panel5 = new Panel();
             label2 = new Label();
+            cboDanhMuc = new ComboBox();
             panel4 = new Panel();
             btnXem = new Button();
             btnXoa = new Button();
@@ -48,6 +50,8 @@
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grvDanhMuc).BeginInit();
             panel3.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,11 +67,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(160, 12);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(463, 9);
             label1.Name = "label1";
-            label1.Size = new Size(132, 20);
+            label1.Size = new Size(216, 31);
             label1.TabIndex = 0;
-            label1.Text = "Quán Lý Danh Mục";
+            label1.Text = "Quản Lý Danh Mục";
+            label1.Click += label1_Click;
             // 
             // panel2
             // 
@@ -106,47 +112,67 @@
             // 
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel3.BackColor = SystemColors.InactiveCaption;
-            panel3.Controls.Add(cboDanhMuc);
+            panel3.Controls.Add(panel6);
             panel3.Controls.Add(txtID);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label2);
+            panel3.Controls.Add(panel5);
+            panel3.Controls.Add(cboDanhMuc);
             panel3.Location = new Point(737, 47);
             panel3.Name = "panel3";
             panel3.Size = new Size(445, 616);
             panel3.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = SystemColors.ButtonFace;
+            panel6.Controls.Add(label3);
+            panel6.Location = new Point(65, 126);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(105, 27);
+            panel6.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.Control;
+            label3.Location = new Point(17, 2);
+            label3.Name = "label3";
+            label3.Size = new Size(76, 20);
+            label3.TabIndex = 1;
+            label3.Text = "Danh Mục";
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(191, 66);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(188, 27);
+            txtID.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = SystemColors.ButtonFace;
+            panel5.Controls.Add(label2);
+            panel5.Location = new Point(65, 66);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(105, 27);
+            panel5.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(34, 3);
+            label2.Name = "label2";
+            label2.Size = new Size(24, 20);
+            label2.TabIndex = 0;
+            label2.Text = "ID";
+            label2.Click += label2_Click;
             // 
             // cboDanhMuc
             // 
             cboDanhMuc.FormattingEnabled = true;
             cboDanhMuc.Location = new Point(191, 125);
             cboDanhMuc.Name = "cboDanhMuc";
-            cboDanhMuc.Size = new Size(151, 28);
+            cboDanhMuc.Size = new Size(188, 28);
             cboDanhMuc.TabIndex = 3;
-            // 
-            // txtID
-            // 
-            txtID.Location = new Point(191, 62);
-            txtID.Name = "txtID";
-            txtID.Size = new Size(151, 27);
-            txtID.TabIndex = 2;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(89, 133);
-            label3.Name = "label3";
-            label3.Size = new Size(76, 20);
-            label3.TabIndex = 1;
-            label3.Text = "Danh Mục";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(89, 69);
-            label2.Name = "label2";
-            label2.Size = new Size(24, 20);
-            label2.TabIndex = 0;
-            label2.Text = "ID";
             // 
             // panel4
             // 
@@ -163,42 +189,46 @@
             // btnXem
             // 
             btnXem.Anchor = AnchorStyles.Bottom;
-            btnXem.Location = new Point(746, 11);
+            btnXem.BackColor = SystemColors.Info;
+            btnXem.Location = new Point(746, 13);
             btnXem.Name = "btnXem";
-            btnXem.Size = new Size(100, 68);
+            btnXem.Size = new Size(114, 62);
             btnXem.TabIndex = 11;
             btnXem.Text = "Xem";
-            btnXem.UseVisualStyleBackColor = true;
+            btnXem.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
             btnXoa.Anchor = AnchorStyles.Bottom;
-            btnXoa.Location = new Point(486, 13);
+            btnXoa.BackColor = SystemColors.Info;
+            btnXoa.Location = new Point(482, 13);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(99, 62);
+            btnXoa.Size = new Size(103, 62);
             btnXoa.TabIndex = 10;
             btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.UseVisualStyleBackColor = false;
             // 
             // Sửa
             // 
             Sửa.Anchor = AnchorStyles.Bottom;
+            Sửa.BackColor = SystemColors.Info;
             Sửa.Location = new Point(612, 13);
             Sửa.Name = "Sửa";
-            Sửa.Size = new Size(96, 62);
+            Sửa.Size = new Size(104, 62);
             Sửa.TabIndex = 9;
             Sửa.Text = "Sửa";
-            Sửa.UseVisualStyleBackColor = true;
+            Sửa.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
             btnThem.Anchor = AnchorStyles.Bottom;
+            btnThem.BackColor = SystemColors.Info;
             btnThem.Location = new Point(352, 13);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(100, 62);
             btnThem.TabIndex = 8;
             btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
+            btnThem.UseVisualStyleBackColor = false;
             // 
             // fQuanLyDanhMuc
             // 
@@ -219,6 +249,10 @@
             ((System.ComponentModel.ISupportInitialize)grvDanhMuc).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel4.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -241,5 +275,7 @@
         private Button btnXoa;
         private Button Sửa;
         private Button btnThem;
+        private Panel panel5;
+        private Panel panel6;
     }
 }

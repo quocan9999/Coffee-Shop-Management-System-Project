@@ -70,11 +70,34 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
+            panel5 = new Panel();
+            panel6 = new Panel();
+            label2 = new Label();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            panel9 = new Panel();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            panel14 = new Panel();
+            panel15 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grvNhanVien).BeginInit();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
+            panel11.SuspendLayout();
+            panel12.SuspendLayout();
+            panel13.SuspendLayout();
+            panel14.SuspendLayout();
+            panel15.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -89,15 +112,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(137, 19);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(425, 9);
             label1.Name = "label1";
-            label1.Size = new Size(133, 20);
+            label1.Size = new Size(218, 31);
             label1.TabIndex = 0;
             label1.Text = "Quản Lý Nhân Viên";
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.Controls.Add(panel6);
             panel2.Controls.Add(grvNhanVien);
             panel2.Location = new Point(0, 51);
             panel2.Name = "panel2";
@@ -191,9 +216,9 @@
             // btnXem
             // 
             btnXem.Anchor = AnchorStyles.Bottom;
-            btnXem.Location = new Point(746, 10);
+            btnXem.Location = new Point(746, 12);
             btnXem.Name = "btnXem";
-            btnXem.Size = new Size(84, 68);
+            btnXem.Size = new Size(106, 62);
             btnXem.TabIndex = 11;
             btnXem.Text = "Xem";
             btnXem.UseVisualStyleBackColor = true;
@@ -203,7 +228,7 @@
             btnXoa.Anchor = AnchorStyles.Bottom;
             btnXoa.Location = new Point(482, 12);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(99, 62);
+            btnXoa.Size = new Size(102, 62);
             btnXoa.TabIndex = 10;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -213,7 +238,7 @@
             Sửa.Anchor = AnchorStyles.Bottom;
             Sửa.Location = new Point(612, 12);
             Sửa.Name = "Sửa";
-            Sửa.Size = new Size(96, 62);
+            Sửa.Size = new Size(106, 62);
             Sửa.TabIndex = 9;
             Sửa.Text = "Sửa";
             Sửa.UseVisualStyleBackColor = true;
@@ -223,7 +248,7 @@
             btnThem.Anchor = AnchorStyles.Bottom;
             btnThem.Location = new Point(352, 12);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(100, 62);
+            btnThem.Size = new Size(101, 62);
             btnThem.TabIndex = 8;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
@@ -232,6 +257,16 @@
             // 
             panel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel4.BackColor = SystemColors.InactiveCaption;
+            panel4.Controls.Add(panel15);
+            panel4.Controls.Add(panel14);
+            panel4.Controls.Add(panel13);
+            panel4.Controls.Add(panel12);
+            panel4.Controls.Add(panel11);
+            panel4.Controls.Add(panel10);
+            panel4.Controls.Add(panel9);
+            panel4.Controls.Add(panel8);
+            panel4.Controls.Add(panel7);
+            panel4.Controls.Add(panel5);
             panel4.Controls.Add(mtxtDate);
             panel4.Controls.Add(button1);
             panel4.Controls.Add(txtSDT);
@@ -243,17 +278,7 @@
             panel4.Controls.Add(txtEmail);
             panel4.Controls.Add(txtHoTen);
             panel4.Controls.Add(txtIDNV);
-            panel4.Controls.Add(label12);
             panel4.Controls.Add(txtTimKiemNV);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(label8);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(label6);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(label3);
             panel4.Location = new Point(642, 51);
             panel4.Name = "panel4";
             panel4.Size = new Size(540, 607);
@@ -261,104 +286,108 @@
             // 
             // mtxtDate
             // 
-            mtxtDate.Location = new Point(111, 141);
+            mtxtDate.Location = new Point(141, 215);
             mtxtDate.Mask = "00/00/0000";
             mtxtDate.Name = "mtxtDate";
-            mtxtDate.Size = new Size(125, 27);
+            mtxtDate.Size = new Size(128, 27);
             mtxtDate.TabIndex = 23;
             // 
             // button1
             // 
-            button1.Location = new Point(210, 3);
+            button1.BackColor = SystemColors.Info;
+            button1.Location = new Point(376, 11);
             button1.Name = "button1";
-            button1.Size = new Size(105, 48);
+            button1.Size = new Size(112, 72);
             button1.TabIndex = 22;
             button1.Text = "Tìm Kiếm";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // txtSDT
             // 
-            txtSDT.Location = new Point(346, 129);
+            txtSDT.Location = new Point(403, 215);
             txtSDT.Name = "txtSDT";
             txtSDT.Size = new Size(125, 27);
             txtSDT.TabIndex = 21;
             // 
             // txtGioiTinh
             // 
-            txtGioiTinh.Location = new Point(347, 72);
+            txtGioiTinh.Location = new Point(403, 157);
             txtGioiTinh.Name = "txtGioiTinh";
             txtGioiTinh.Size = new Size(125, 27);
             txtGioiTinh.TabIndex = 20;
             // 
             // txtTrangThai
             // 
-            txtTrangThai.Location = new Point(348, 282);
+            txtTrangThai.Location = new Point(403, 450);
             txtTrangThai.Name = "txtTrangThai";
             txtTrangThai.Size = new Size(125, 27);
             txtTrangThai.TabIndex = 19;
             // 
             // txtTenDangNhap
             // 
-            txtTenDangNhap.Location = new Point(146, 321);
+            txtTenDangNhap.Location = new Point(141, 450);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(125, 27);
             txtTenDangNhap.TabIndex = 18;
             // 
             // txtLuong
             // 
-            txtLuong.Location = new Point(110, 278);
+            txtLuong.Location = new Point(141, 387);
             txtLuong.Name = "txtLuong";
             txtLuong.Size = new Size(125, 27);
             txtLuong.TabIndex = 17;
             // 
             // txtDiaChi
             // 
-            txtDiaChi.Location = new Point(110, 227);
+            txtDiaChi.Location = new Point(141, 330);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.Size = new Size(286, 27);
             txtDiaChi.TabIndex = 16;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(110, 186);
+            txtEmail.Location = new Point(141, 272);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(288, 27);
             txtEmail.TabIndex = 15;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtHoTen
             // 
-            txtHoTen.Location = new Point(110, 100);
+            txtHoTen.Location = new Point(141, 157);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(98, 27);
+            txtHoTen.Size = new Size(128, 27);
             txtHoTen.TabIndex = 13;
             // 
             // txtIDNV
             // 
-            txtIDNV.Location = new Point(111, 63);
+            txtIDNV.Location = new Point(141, 96);
             txtIDNV.Name = "txtIDNV";
-            txtIDNV.Size = new Size(97, 27);
+            txtIDNV.Size = new Size(128, 27);
             txtIDNV.TabIndex = 12;
+            txtIDNV.TextChanged += txtIDNV_TextChanged;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(28, 328);
+            label12.Location = new Point(3, 3);
             label12.Name = "label12";
             label12.Size = new Size(112, 20);
             label12.TabIndex = 11;
             label12.Text = "Tên Đăng Nhập";
+            label12.Click += label12_Click;
             // 
             // txtTimKiemNV
             // 
-            txtTimKiemNV.Location = new Point(56, 14);
+            txtTimKiemNV.Location = new Point(81, 34);
             txtTimKiemNV.Name = "txtTimKiemNV";
-            txtTimKiemNV.Size = new Size(125, 27);
+            txtTimKiemNV.Size = new Size(263, 27);
             txtTimKiemNV.TabIndex = 10;
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(28, 278);
+            label11.Location = new Point(5, 3);
             label11.Name = "label11";
             label11.Size = new Size(51, 20);
             label11.TabIndex = 9;
@@ -367,7 +396,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(256, 285);
+            label10.Location = new Point(15, 3);
             label10.Name = "label10";
             label10.Size = new Size(78, 20);
             label10.TabIndex = 8;
@@ -376,7 +405,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(28, 227);
+            label9.Location = new Point(5, 3);
             label9.Name = "label9";
             label9.Size = new Size(61, 20);
             label9.TabIndex = 7;
@@ -385,16 +414,17 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(28, 186);
+            label8.Location = new Point(6, 3);
             label8.Name = "label8";
             label8.Size = new Size(46, 20);
             label8.TabIndex = 6;
             label8.Text = "Email";
+            label8.Click += label8_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(256, 128);
+            label7.Location = new Point(15, 4);
             label7.Name = "label7";
             label7.Size = new Size(36, 20);
             label7.TabIndex = 5;
@@ -403,7 +433,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(28, 141);
+            label6.Location = new Point(6, 3);
             label6.Name = "label6";
             label6.Size = new Size(76, 20);
             label6.TabIndex = 4;
@@ -412,7 +442,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(247, 70);
+            label5.Location = new Point(15, 3);
             label5.Name = "label5";
             label5.Size = new Size(68, 20);
             label5.TabIndex = 3;
@@ -421,7 +451,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(28, 103);
+            label4.Location = new Point(5, 3);
             label4.Name = "label4";
             label4.RightToLeft = RightToLeft.No;
             label4.Size = new Size(56, 20);
@@ -431,11 +461,119 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(38, 66);
+            label3.Location = new Point(6, 3);
             label3.Name = "label3";
             label3.Size = new Size(24, 20);
             label3.TabIndex = 1;
             label3.Text = "ID";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = SystemColors.ButtonFace;
+            panel5.Controls.Add(label10);
+            panel5.Location = new Point(293, 450);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(104, 27);
+            panel5.TabIndex = 24;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = SystemColors.ButtonFace;
+            panel6.Controls.Add(label2);
+            panel6.Location = new Point(637, 473);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(104, 27);
+            panel6.TabIndex = 25;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 3);
+            label2.Name = "label2";
+            label2.Size = new Size(78, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Trạng Thái";
+            // 
+            // panel7
+            // 
+            panel7.BackColor = SystemColors.ButtonFace;
+            panel7.Controls.Add(label12);
+            panel7.Location = new Point(10, 450);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(125, 27);
+            panel7.TabIndex = 25;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = SystemColors.ButtonFace;
+            panel8.Controls.Add(label11);
+            panel8.Location = new Point(10, 387);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(125, 27);
+            panel8.TabIndex = 26;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = SystemColors.ButtonFace;
+            panel9.Controls.Add(label9);
+            panel9.Location = new Point(10, 330);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(125, 27);
+            panel9.TabIndex = 27;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = SystemColors.ButtonFace;
+            panel10.Controls.Add(label8);
+            panel10.Location = new Point(10, 272);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(125, 27);
+            panel10.TabIndex = 28;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = SystemColors.ButtonFace;
+            panel11.Controls.Add(label6);
+            panel11.Location = new Point(10, 215);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(125, 27);
+            panel11.TabIndex = 29;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = SystemColors.ButtonFace;
+            panel12.Controls.Add(label4);
+            panel12.Location = new Point(10, 157);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(125, 27);
+            panel12.TabIndex = 30;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = SystemColors.ButtonFace;
+            panel13.Controls.Add(label3);
+            panel13.Location = new Point(10, 96);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(125, 27);
+            panel13.TabIndex = 31;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = SystemColors.ButtonFace;
+            panel14.Controls.Add(label7);
+            panel14.Location = new Point(293, 215);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(104, 27);
+            panel14.TabIndex = 32;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = SystemColors.ButtonFace;
+            panel15.Controls.Add(label5);
+            panel15.Location = new Point(293, 157);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(104, 27);
+            panel15.TabIndex = 33;
             // 
             // fQuanLyNhanVien
             // 
@@ -457,6 +595,28 @@
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -504,5 +664,17 @@
         private Button Sửa;
         private Button btnThem;
         private MaskedTextBox mtxtDate;
+        private Panel panel6;
+        private Label label2;
+        private Panel panel7;
+        private Panel panel5;
+        private Panel panel10;
+        private Panel panel9;
+        private Panel panel8;
+        private Panel panel11;
+        private Panel panel15;
+        private Panel panel14;
+        private Panel panel13;
+        private Panel panel12;
     }
 }
